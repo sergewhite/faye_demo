@@ -1,0 +1,11 @@
+defaults: &defaults
+  faye_server_url: http://localhost:9292/faye
+  faye_token: "433fgfgdfgdo3"
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults

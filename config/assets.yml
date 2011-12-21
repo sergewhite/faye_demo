@@ -1,0 +1,24 @@
+package_assets: on #always - to test in dev mode
+compress_assets: on
+javascript_compressor: yui #closure
+compressor_options:
+  munge: true
+template_function: Mustache.template
+
+javascripts:
+  common_front:
+    - public/javascripts/jquery.min.js
+    - public/javascripts/jquery-ui.min.js
+    - public/javascripts/jquery_ujs.js
+    - public/javascripts/mustache.js
+    - public/javascripts/jammit.mustache.js
+    - public/javascripts/underscore-min.js
+    - public/javascripts/underscore.string.js
+    - public/javascripts/backbone.js
+    - public/javascripts/backbone-app.js
+    - public/javascripts/backbone.rails.js
+    #- public/javascripts/tmplts/**/*.jst
+    - public/javascripts/_*.js
+stylesheets:
+  main:
+    - public/stylesheets/main.css

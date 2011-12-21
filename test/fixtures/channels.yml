@@ -1,0 +1,24 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  title: MyString
+  current_users_count: 1
+  current_users: MyText
+
+two:
+  title: MyString
+  current_users_count: 1
+  current_users: MyText
+
+# == Schema Information
+#
+# Table name: channels
+#
+#  id                  :integer         not null, primary key
+#  title               :string(255)
+#  current_users_count :integer
+#  current_users       :text
+#  created_at          :datetime
+#  updated_at          :datetime
+#
+

@@ -1,0 +1,17 @@
+<div id="new_channel">
+  <% simple_form_for @channel, :url => channels_path, :html => { :multipart => true } do |f| %>
+    <%= f.error_messages %>
+    <%= f.input :title %>
+    <div class="form_group button_group">
+      <%= f.submit 'Go to room' %>
+    </div>
+  <% end %>
+</div>
+<br />
+<div class="all_channels">
+  <ul>
+    <% @channels.each do |c| %>
+      <li><%= link_to c.title, channel_path(c.id) %></li>
+    <% end %>
+  </ul>
+</div>

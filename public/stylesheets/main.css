@@ -1,0 +1,3 @@
+body {background: black;text-align: center; vertical-align:middle; padding:0; margin:0;}
+div.all_channels {width: 100%; height:100%; border-top:1px solid red;}
+div#text_area {width:90%;height:400px;background:white;position:relative;margin:0 auto;}

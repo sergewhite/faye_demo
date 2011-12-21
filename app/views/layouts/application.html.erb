@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chat</title>
+  <%= include_stylesheets :main, :media => 'all' %>
+  <script type="text/javascript" src="http://localhost:9292/faye.js"></script>
+  <%= include_javascripts :common_front %>
+  <%= yield(:js) %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>
